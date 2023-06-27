@@ -1,0 +1,107 @@
+*, *:before, *:after{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.container{
+    padding: 30px 30px;
+    display: flex;
+    flex-direction: column;
+}
+.illustration-mockups{
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+.logo{
+    width: 50%;
+    margin-bottom: 3rem;
+}
+p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+button{
+    display: block;
+    text-align: center;
+    padding: 10px 5px;
+    width: 60%;
+    align-self: center;
+    border: none;
+    border-radius: 20px;
+    color: hsl(257, 40%, 49%);
+    font-size: 1rem;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+ion-icon{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+}
+ion-icon:hover{
+    cursor: pointer;
+    color: hsl(300, 69%, 71%);
+    border-color: hsl(300, 69%, 71%);
+}
+button:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: hsl(300, 69%, 71%);;
+}
+.text-and-icons{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (min-width: 1444px) {
+    .container{
+        flex-direction: row;
+        height: 100%;
+        padding: 3rem;
+    }
+    .text-and-icons{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        width: 50%;
+        margin-left: 2rem;
+        max-width: 40%;
+    }
+    h1{
+        font-size: 3rem;
+        text-align: start;
+    }
+    p{
+        font-size: 1.2rem;
+        text-align: start;
+    }
+    button{
+        width: 40%;
+        padding: 20px;
+        border-radius: 40px;
+        font-size: 1.3rem;
+        align-self: flex-start;
+    }
+    .icons{
+        align-self: flex-end;
+        margin-top: 10rem;
+    }
+    
+}
